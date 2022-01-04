@@ -30,7 +30,7 @@ spec:
       - name: deploy-pull-harbor
       containers:
         - name: server
-          image: checkoutservice
+          image: gcr.io/poised-beach-332413/checkoutservice
           ports:
           - containerPort: 5050
           readinessProbe:

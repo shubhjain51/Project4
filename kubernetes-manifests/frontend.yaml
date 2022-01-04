@@ -32,7 +32,7 @@ spec:
       - name: deploy-pull-harbor
       containers:
         - name: server
-          image: frontend
+          image: gcr.io/poised-beach-332413/frontend
           ports:
           - containerPort: 8080
           readinessProbe:

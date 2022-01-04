@@ -31,7 +31,7 @@ spec:
       - name: deploy-pull-harbor
       containers:
       - name: server
-        image: productcatalogservice
+        image: gcr.io/poised-beach-332413/productcatalogservice
         ports:
         - containerPort: 3550
         env:
