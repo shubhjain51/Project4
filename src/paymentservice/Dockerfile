@@ -27,9 +27,10 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install 
+
 RUN npm install --global --production windows-build-tools
 RUN npm install -g node-gyp
+RUN npm install 
 FROM base
 
 RUN GRPC_HEALTH_PROBE_VERSION=v0.3.6 && \
