@@ -28,7 +28,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm install 
-npm install --global --production windows-build-tools
+
 npm install -g node-gyp
 
 FROM base
